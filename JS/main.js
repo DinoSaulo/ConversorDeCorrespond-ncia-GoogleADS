@@ -1,4 +1,4 @@
-function myFunction() {
+function addMais() {
     let x = document.getElementById("myTextarea").value;
     let termosDeBuscaSeparados = []
     termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
