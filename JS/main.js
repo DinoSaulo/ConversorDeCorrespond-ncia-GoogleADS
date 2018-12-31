@@ -1,7 +1,6 @@
 function obtemTextoSeparado(){
-    let x = document.getElementById("myTextarea").value;
-    let termosDeBuscaSeparados = []
-    termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    let inputText = document.getElementById("myTextarea").value;
+    let termosDeBuscaSeparados = inputText.split(/[\n|\n\r]/)
     return termosDeBuscaSeparados;
 }
 
