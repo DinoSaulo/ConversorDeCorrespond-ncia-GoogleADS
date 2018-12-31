@@ -1,7 +1,13 @@
-function addMais() {
+function obtemTextoSeparado(){
     let x = document.getElementById("myTextarea").value;
     let termosDeBuscaSeparados = []
     termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    return termosDeBuscaSeparados;
+}
+
+
+function addMais() {
+    let termosDeBuscaSeparados = obtemTextoSeparado()
     let  finalArray = []
 
     for(let i = 0; i < termosDeBuscaSeparados.length; i++) {
@@ -17,9 +23,7 @@ function addMais() {
 }
 
 function addNormal() {
-    let x = document.getElementById("myTextarea").value;
-    let termosDeBuscaSeparados = []
-    termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    let termosDeBuscaSeparados = obtemTextoSeparado()
     let finalArray = ''
 
     for ( let i = 0; i < termosDeBuscaSeparados.length; i++) finalArray += termosDeBuscaSeparados[i].concat('</br>')
@@ -28,9 +32,7 @@ function addNormal() {
 }
 
 function addAspas() {
-    let x = document.getElementById("myTextarea").value;
-    let termosDeBuscaSeparados = []
-    termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    let termosDeBuscaSeparados = obtemTextoSeparado()
     let finalArray = ''
 
     for(let i = 0; i < termosDeBuscaSeparados.length; i++) {
@@ -52,9 +54,7 @@ function addAspas() {
 }
 
 function addChaves() {
-    let x = document.getElementById("myTextarea").value;
-    let termosDeBuscaSeparados = []
-    termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    let termosDeBuscaSeparados = obtemTextoSeparado()
     let finalArray = ''
 
     for(let i = 0; i < termosDeBuscaSeparados.length; i++) {
@@ -76,9 +76,7 @@ function addChaves() {
 }
 
 function addMenos() {
-    let x = document.getElementById("myTextarea").value;
-    let termosDeBuscaSeparados = []
-    termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    let termosDeBuscaSeparados = obtemTextoSeparado()
     let  finalArray = []
 
     for(let i = 0; i < termosDeBuscaSeparados.length; i++) {
