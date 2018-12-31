@@ -18,7 +18,13 @@ function addMais() {
 
 function addNormal() {
     let x = document.getElementById("myTextarea").value;
-    document.getElementById("demo").innerHTML = x;
+    let termosDeBuscaSeparados = []
+    termosDeBuscaSeparados = x.split(/[\n|\n\r]/)
+    let finalArray = ''
+
+    for ( let i = 0; i < termosDeBuscaSeparados.length; i++) finalArray += termosDeBuscaSeparados[i].concat('</br>')
+
+    document.getElementById("demo").innerHTML = finalArray;
 }
 
 function addAspas() {
