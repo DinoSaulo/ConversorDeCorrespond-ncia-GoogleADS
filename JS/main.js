@@ -89,3 +89,18 @@ function addMenos() {
 
     document.getElementById("outputTextArea").innerHTML = finalArray;
 }
+
+
+function copiaTexto() {
+    var copyText = document.getElementById("outputTextArea");
+    copyText.select();
+    document.execCommand("copy");
+    
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + copyText.value;
+  }
+  
+  function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+  }
