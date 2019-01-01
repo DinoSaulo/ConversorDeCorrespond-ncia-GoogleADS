@@ -332,3 +332,52 @@ ul.social-icon {
     font-size: 13px;
 }
 }
+
+/* ------- Fim do CSS do W3 layouts ----- */
+
+#inputTextArea {
+    font-size: 20px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#outputTextArea {
+    font-size: 20px;
+    -webkit-border-bottom-right-radius: 15px;
+    -moz-border-radius-bottomright: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#inputTitle {
+    width: 97%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    background-color: #b3b3ff;
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-left-radius: 15px;
+}
+
+#outputTitle {
+    width: 97%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    background-color: #b3b3ff;
+    -webkit-border-top-right-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    border-top-right-radius: 15px;
+}
+
+.core {
+    display: flex;
+    flex-direction: row;
+    flex: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}

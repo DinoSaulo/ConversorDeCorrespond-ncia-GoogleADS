@@ -1,5 +1,5 @@
 function obtemTextoSeparado(){
-    let inputText = document.getElementById("myTextarea").value;
+    let inputText = document.getElementById("inputTextArea").value;
     let termosDeBuscaSeparados = inputText.split(/[\n|\n\r]/)
     return termosDeBuscaSeparados;
 }
@@ -27,7 +27,7 @@ function addNormal() {
 
     for ( let i = 0; i < termosDeBuscaSeparados.length; i++) finalArray += termosDeBuscaSeparados[i].concat('</br>')
 
-    document.getElementById("demo").innerHTML = finalArray;
+    document.getElementById("outputTextArea").innerHTML = finalArray;
 }
 
 function addAspas() {
@@ -49,7 +49,7 @@ function addAspas() {
         }
     }
 
-    document.getElementById("demo").innerHTML = finalArray;
+    document.getElementById("outputTextArea").innerHTML = finalArray;
 }
 
 function addChaves() {
@@ -71,7 +71,7 @@ function addChaves() {
         }
     }
 
-    document.getElementById("demo").innerHTML = finalArray;
+    document.getElementById("outputTextArea").innerHTML = finalArray;
 }
 
 function addMenos() {
@@ -87,5 +87,5 @@ function addMenos() {
         }
     }
 
-    document.getElementById("demo").innerHTML = finalArray;
+    document.getElementById("outputTextArea").innerHTML = finalArray;
 }
