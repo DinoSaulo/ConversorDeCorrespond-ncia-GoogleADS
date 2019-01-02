@@ -14,18 +14,18 @@ function addMais() {
 
         for(let j = 0; j < palavrasDosTermosDeBuscaSeparados.length; j++) {
             finalArray += ('+').concat(palavrasDosTermosDeBuscaSeparados[j]).concat(' ')
-            if( j === palavrasDosTermosDeBuscaSeparados.length - 1) finalArray = finalArray.concat('</br>')   
+            if( j === palavrasDosTermosDeBuscaSeparados.length - 1) finalArray = finalArray.concat('\n')   
         }
     }
 
-    document.getElementById("demo").innerHTML = finalArray;
+    document.getElementById("outputTextArea").innerHTML = finalArray;
 }
 
 function addNormal() {
     let termosDeBuscaSeparados = obtemTextoSeparado()
     let finalArray = ''
 
-    for ( let i = 0; i < termosDeBuscaSeparados.length; i++) finalArray += termosDeBuscaSeparados[i].concat('</br>')
+    for ( let i = 0; i < termosDeBuscaSeparados.length; i++) finalArray += termosDeBuscaSeparados[i].concat('\n')
 
     document.getElementById("outputTextArea").innerHTML = finalArray;
 }
@@ -42,7 +42,7 @@ function addAspas() {
             
             if( j === palavrasDosTermosDeBuscaSeparados.length - 1) {
                 finalArray = finalArray.concat(palavrasDosTermosDeBuscaSeparados[j])
-                finalArray = finalArray.concat('"</br>')
+                finalArray = finalArray.concat('"\n')
             } else {
                 finalArray = finalArray.concat(palavrasDosTermosDeBuscaSeparados[j]).concat(' ')
             }
@@ -64,7 +64,7 @@ function addChaves() {
             
             if( j === palavrasDosTermosDeBuscaSeparados.length - 1) {
                 finalArray = finalArray.concat(palavrasDosTermosDeBuscaSeparados[j])
-                finalArray = finalArray.concat(']</br>')
+                finalArray = finalArray.concat(']\n')
             } else {
                 finalArray = finalArray.concat(palavrasDosTermosDeBuscaSeparados[j]).concat(' ')
             }
@@ -83,7 +83,7 @@ function addMenos() {
 
         for(let j = 0; j < palavrasDosTermosDeBuscaSeparados.length; j++) {
             finalArray += ('-').concat(palavrasDosTermosDeBuscaSeparados[j]).concat(' ')
-            if( j === palavrasDosTermosDeBuscaSeparados.length - 1) finalArray = finalArray.concat('</br>')   
+            if( j === palavrasDosTermosDeBuscaSeparados.length - 1) finalArray = finalArray.concat('\n')   
         }
     }
 

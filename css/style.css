@@ -31,6 +31,7 @@ img{max-width:100%;}
 /*--login form start here--*/ 
 body {
    background:url(../images/sun.jpg)no-repeat;
+   /*background-color: rgba(21,32,42,1);*/
    background-size: cover;
    font-family: 'Open Sans', sans-serif;
    font-size: 100%;
@@ -334,6 +335,7 @@ ul.social-icon {
 }
 
 /* ------- Fim do CSS do W3 layouts ----- */
+
 
 /* ------- Copy text ------- */
 
